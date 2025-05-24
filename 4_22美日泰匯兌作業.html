@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>台幣轉換</h1>
+
+
+
+
+<div id="demo"></div>
+
+<input type="text" id="money" value=""><br>
+<button type="button" onclick='美金()'>美金</button>
+<div id="demo2"></div>
+<button type="button" onclick='泰銖()'>泰銖</button>
+<div id="demo3"></div>
+<button type="button" onclick='日幣()'>日幣</button>
+
+
+
+
+
+</body>
+<script>
+    function 美金(){
+
+let ntus = document.getElementById("money").value;
+ntus=parseFloat(ntus);
+let us = ntus*0.03;
+document.getElementById("demo").innerHTML=us;
+console.log(demo);
+}
+
+ function 泰銖(){
+   let nttl = document.getElementById("money").value ; //抓數字
+    nttl=parseFloat(nttl);
+    let tl = nttl*1.02;
+    document.getElementById("demo2").innerHTML= tl; //顯示在html
+         
+ } 
+function 日幣(){
+   let ntjp = document.getElementById("money").value ;
+    ntjp=parseFloat(ntjp);
+    let jp = ntjp*4.32;
+    document.getElementById("demo3").innerHTML = jp;
+ }
+
+
+
+
+
+</script>
+
+
+</html>
+
